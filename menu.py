@@ -1,5 +1,5 @@
-def somar (a, b):
- return a + b
+def somar(a, b):
+    return a + b
 
 def subtrair(a, b):
     return a - b
@@ -28,20 +28,20 @@ def menu():
         opcao = input("Digite o número da opção desejada: ")
 
         if opcao == "5":
-            calculadora.sair()
+            sair()
 
         if opcao in ["1", "2", "3", "4"]:
             a = float(input("Digite o primeiro número: "))
             b = float(input("Digite o segundo número: "))
 
             if opcao == "1":
-                print(f"Resultado: {calculadora.somar(a, b)}")
+                print(f"Resultado: {somar(a, b)}")
             elif opcao == "2":
-                print(f"Resultado: {calculadora.subtrair(a, b)}")
+                print(f"Resultado: {subtrair(a, b)}")
             elif opcao == "3":
-                print(f"Resultado: {calculadora.multiplicar(a, b)}")
+                print(f"Resultado: {multiplicar(a, b)}")
             elif opcao == "4":
-                print(f"Resultado: {calculadora.dividir(a, b)}")
+                print(f"Resultado: {dividir(a, b)}")
         else:
             print("Opção inválida. Tente novamente.")
 
